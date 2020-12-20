@@ -62,6 +62,13 @@ export default {
       e.preventDefault();
       this.passwordError =
         this.password.length > 5 ? "" : "密码位数不得小于6位";
+      if (!this.passwordError) {
+        console.log("email: ", this.email);
+        console.log("password: ", this.password);
+        console.log("role: ", this.role);
+        console.log("skills: ", this.skills);
+        console.log("terms accepted: ", this.terms);
+      }
     },
   },
 };
